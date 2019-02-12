@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://gifted-lamport-2cd3aa.netlify.com/"
 
 theme = "hugo-primer"
 languageCode = "ja"
