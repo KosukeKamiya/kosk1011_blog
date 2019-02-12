@@ -6,4 +6,11 @@ menu: "main"
 weight: 1
 ---
 
-TBD
+### Name
+Name : Kosuke (kosk1011, sen_nen)
+
+### Job
+Sotware Engineer
+
+### Links
+[Twitter](https://twitter.com/sen_nen)
