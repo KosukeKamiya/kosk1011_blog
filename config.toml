@@ -1,4 +1,6 @@
 baseURL = "http://example.org/"
+
+theme = "hugo-primer"
 languageCode = "ja"
 title = "kosk1011 Blog"
 
