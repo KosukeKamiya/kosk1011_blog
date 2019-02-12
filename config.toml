@@ -1,0 +1,8 @@
+baseURL = "http://example.org/"
+languageCode = "ja"
+title = "kosk1011 Blog"
+
+hasCJKLanguage = true
+summaryLength = 70
+
+creditHugoPrimer = true
