@@ -7,4 +7,17 @@ title = "kosk1011 Blog"
 hasCJKLanguage = true
 summaryLength = 70
 
+[frontmatter]
+# update sitemap.xml's lastmod datetime by file change time, instead of git.
+lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[params]
+description = "Describe what your web page is about"
+twitter = "@sen_nen"
+
+# You can use favicon by addin them manually.
+useIcon = false
+useTwitterCard = true
+
+shareTo = ["Twitter", "Hatena", "Facebook"]
 creditHugoPrimer = true
