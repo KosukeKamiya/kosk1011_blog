@@ -7,6 +7,7 @@ title = "kosk1011 Blog"
 hasCJKLanguage = true
 summaryLength = 70
 
+disqusShortname = "kosk1011-blog"
 
 [permalinks]
   posts = "/:year/:month/:day/:title/"
