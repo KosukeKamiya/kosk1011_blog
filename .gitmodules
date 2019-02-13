@@ -1,6 +1,4 @@
 [submodule "themes/hugo-primer"]
 	path = themes/hugo-primer
 	url = https://github.com/qqhann/hugo-primer.git
-[submodule "themes/minimage.git"]
-	path = themes/minimage.git
-	url = https://github.com/d-kusk/minimage.git
+
