@@ -1,7 +1,6 @@
 ---
-title: "Firstpost"
-date: 2019-02-12T23:06:28+09:00
+title: Firstpost
+date: 2019-02-12T14:06:28.000Z
 draft: false
 ---
-
 テスト投稿
