@@ -1,13 +1,13 @@
 backend:
   name: github
-  repo: KosukeKamiya/line-login-starter
+  repo: KosukeKamiya/kosk1011_blog
 
 media_folder: "static/media"
 
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "posts"
+    folder: "content/posts"
     create: true
     slug: "{{year}}{{month}}{{day}}_{{slug}}" 
     fields:
