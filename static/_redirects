@@ -1,0 +1,2 @@
+# Root directory redirects to /posts/
+/ /posts/
