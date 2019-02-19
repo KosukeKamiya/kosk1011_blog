@@ -9,6 +9,8 @@ summaryLength = 70
 
 disqusShortname = "kosk1011-blog"
 
+copyright = "&copy;kosk1011"
+
 [permalinks]
   posts = "/:year/:month/:day/:title/"
 
@@ -43,4 +45,5 @@ useIcon = true
 useTwitterCard = true
 
 shareTo = ["Twitter", "Hatena", "Facebook"]
-creditHugoPrimer = false
+ShowFooterCredits = true
+
