@@ -37,7 +37,7 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
     weight = 3
 
 [params]
-description = "Describe what your web page is about"
+description = "kosk1011 Blog"
 twitter = "sen_nen"
 
 # You can use favicon by addin them manually.
