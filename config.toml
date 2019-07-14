@@ -36,6 +36,11 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
     url = "/info/"
     weight = 3
 
+[[menu.main]]
+    name = "Feed"
+    url = "/index.xml"
+    weight = 4
+
 [params]
 description = "kosk1011 Blog"
 twitter = "sen_nen"
