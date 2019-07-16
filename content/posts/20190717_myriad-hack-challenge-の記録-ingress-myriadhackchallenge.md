@@ -1,5 +1,5 @@
 ---
-title: Myriad Hack Challenge の記録 %23ingress %23MyriadHackChallenge
+title: Myriad Hack Challenge の記録
 date: 2019-07-16T15:00:57.126Z
 draft: false
 categories:
