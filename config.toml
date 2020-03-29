@@ -47,8 +47,9 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
     weight = 5
 
 [params]
-description = "kosk1011 Blog"
-twitter = "sen_nen"
+    description = "kosk1011 Blog"
+    images = ["icon.jpg"]
+    twitter = "sen_nen"
 
 # You can use favicon by addin them manually.
 useIcon = true
