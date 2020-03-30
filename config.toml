@@ -28,7 +28,6 @@ ShowFooterCredits = true
 
 [frontmatter]
     publishDate = ["date"]
-    lastmod = [":git"]
 
 [[menu.main]]
     name = "Posts"
