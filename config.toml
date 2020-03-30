@@ -11,17 +11,25 @@ disqusShortname = "kosk1011-blog"
 
 copyright = "&copy;kosk1011"
 
-[permalinks]
-  posts = "/:year/:month/:day/:title/"
-
-[taxonomies]
-  category = "categories"
-
-# [frontmatter]
-# update sitemap.xml's lastmod datetime by file change time, instead of git.
-# lastmod = ["lastmod", ":fileModTime", ":default"]
 enableGitInfo = true
 
+# You can use favicon by addin them manually.
+useIcon = true
+useTwitterCard = true
+
+shareTo = ["Twitter", "Hatena", "Facebook"]
+ShowFooterCredits = true
+
+[permalinks]
+    posts = "/:year/:month/:day/:title/"
+
+[taxonomies]
+    category = "categories"
+
+[frontmatter]
+# update sitemap.xml's lastmod datetime by file change time, instead of git.
+    publishDate = ["date"]
+    lastmod = ["lastmod", ":git"]
 
 [[menu.main]]
     name = "Posts"
@@ -54,10 +62,3 @@ enableGitInfo = true
 
 [markup.goldmark.renderer]
     unsafe = true
-
-# You can use favicon by addin them manually.
-useIcon = true
-useTwitterCard = true
-
-shareTo = ["Twitter", "Hatena", "Facebook"]
-ShowFooterCredits = true
