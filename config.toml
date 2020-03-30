@@ -17,9 +17,11 @@ copyright = "&copy;kosk1011"
 [taxonomies]
   category = "categories"
 
-[frontmatter]
+# [frontmatter]
 # update sitemap.xml's lastmod datetime by file change time, instead of git.
-lastmod = ["lastmod", ":fileModTime", ":default"]
+# lastmod = ["lastmod", ":fileModTime", ":default"]
+enableGitInfo = true
+
 
 [[menu.main]]
     name = "Posts"
