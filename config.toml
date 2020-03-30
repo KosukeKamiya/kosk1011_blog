@@ -29,7 +29,6 @@ ShowFooterCredits = true
 [frontmatter]
 # update sitemap.xml's lastmod datetime by file change time, instead of git.
     publishDate = ["date"]
-    lastmod = [":git"]
 
 [[menu.main]]
     name = "Posts"
