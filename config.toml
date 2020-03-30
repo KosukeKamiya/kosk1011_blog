@@ -47,8 +47,11 @@ lastmod = ["lastmod", ":fileModTime", ":default"]
     weight = 5
 
 [params]
-description = "kosk1011 Blog"
-twitter = "sen_nen"
+    description = "kosk1011 Blog"
+    twitter = "sen_nen"
+
+[markup.goldmark.renderer]
+    unsafe = true
 
 # You can use favicon by addin them manually.
 useIcon = true
@@ -56,4 +59,3 @@ useTwitterCard = true
 
 shareTo = ["Twitter", "Hatena", "Facebook"]
 ShowFooterCredits = true
-
