@@ -35,7 +35,7 @@ ShowFooterCredits = true
     weight = 1
 
 [[menu.main]]
-    name = "categories"
+    name = "Categories"
     url = "/categories/"
     weight = 2
 

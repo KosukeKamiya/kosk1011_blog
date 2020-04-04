@@ -1,2 +1,2 @@
 # Root directory redirects to /posts/
-/ /posts/
+/ /posts/ 301!
