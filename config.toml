@@ -8,17 +8,9 @@ hasCJKLanguage = true
 summaryLength = 70
 
 disqusShortname = "kosk1011-blog"
-
 copyright = "&copy;kosk1011"
 
 enableGitInfo = true
-
-# You can use favicon by addin them manually.
-useIcon = true
-useTwitterCard = true
-
-shareTo = ["Twitter", "Hatena", "Facebook"]
-ShowFooterCredits = true
 
 [permalinks]
     posts = "/:year/:month/:day/:title/"
@@ -57,6 +49,10 @@ ShowFooterCredits = true
 [params]
     description = "kosk1011 Blog"
     twitter = "sen_nen"
+    useIcon = true
+    useTwitterCard = true
+    shareTo = ["Twitter", "Hatena", "Facebook"]
+    ShowFooterCredits = true
 
 [markup.goldmark.renderer]
     unsafe = true
