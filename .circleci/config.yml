@@ -6,7 +6,7 @@ jobs:
       - attach_workspace:
           at: site
       - run: sudo npm install netlify-cli -g
-      - run: netlify deploy --site-id $NETLIFY_SITE_ID -p site/public/ --access-token $NETLIFY_ACCESS_TOKEN
+      - run: netlify deploy --site $NETLIFY_SITE_ID -p site/public/ --auth $NETLIFY_ACCESS_TOKEN
 version: 2.1
 orbs:
   hugo: circleci/hugo@0.5.2
