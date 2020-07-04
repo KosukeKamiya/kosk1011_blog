@@ -1,11 +1,13 @@
 jobs:
   deploy:
     docker:
-      - image: cibuilds/base
+      - image: circleci/node:7.10
     steps:
       - attach_workspace:
           at: site
+      - run: npm install --save netlify-cli
       - run: ls -lah site/public
+      - run: node_modules/netlify-cli/bin/cli.js deploy --site-id $NETLIFY_SITE_ID -p site/public/ --access-token $NETLIFY_ACCESS_TOKEN
 version: 2.1
 orbs:
   hugo: circleci/hugo@0.5.2
