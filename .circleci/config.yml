@@ -8,5 +8,5 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - hugo/build:
-          html-proofer: true
+          html-proofer: false
           version: '0.68.3'
