@@ -4,8 +4,8 @@ jobs:
       - image: cibuilds/base
     steps:
       - attach_workspace:
-          at: my-site
-      - run: ls -lah my-site
+          at: site
+      - run: ls -lah site/public
 version: 2.1
 orbs:
   hugo: circleci/hugo@0.5.2
