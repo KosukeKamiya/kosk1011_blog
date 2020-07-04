@@ -1,0 +1,24 @@
+jobs:
+  deploy:
+    docker:
+      - image: circleci/node:12.18.2
+    steps:
+      - attach_workspace:
+          at: site
+      - run: sudo npm install netlify-cli -g
+      - run: netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --dir site/public/
+version: 2.1
+orbs:
+  hugo: circleci/hugo@0.5.2
+workflows:
+  blog_build:
+    jobs:
+      - hugo/build:
+          html-proofer: false
+          version: '0.68.3'
+      - deploy:
+          filters:
+            branches:
+              only: master
+          requires:
+            - hugo/build
