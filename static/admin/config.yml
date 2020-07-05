@@ -2,6 +2,7 @@ backend:
   name: github
   repo: KosukeKamiya/kosk1011_blog
 
+
 media_folder: "static/media"
 public_folder: "media"
 
