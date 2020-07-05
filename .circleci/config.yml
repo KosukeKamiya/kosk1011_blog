@@ -5,7 +5,6 @@ jobs:
     steps:
       - attach_workspace:
           at: site
-      - run: sudo npm install netlify-cli -g
       - run: netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --dir site/public/
   deploy:
     docker:
@@ -13,7 +12,6 @@ jobs:
     steps:
       - attach_workspace:
           at: site
-      - run: sudo npm install netlify-cli -g
       - run: netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --dir site/public/
 version: 2.1
 orbs:
