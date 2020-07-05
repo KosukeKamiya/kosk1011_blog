@@ -1,11 +1,17 @@
 jobs:
-  deploy:
+  dry_deploy:
     docker:
-      - image: circleci/node:12.18.2
+      - image: kosk1011/netlify-cli:latest
     steps:
       - attach_workspace:
           at: site
-      - run: sudo npm install netlify-cli -g
+      - run: netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --dir site/public/
+  deploy:
+    docker:
+      - image: kosk1011/netlify-cli:latest
+    steps:
+      - attach_workspace:
+          at: site
       - run: netlify deploy --prod --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --dir site/public/
 version: 2.1
 orbs:
@@ -16,6 +22,12 @@ workflows:
       - hugo/build:
           html-proofer: false
           version: '0.68.3'
+      - dry_deploy:
+          filters:
+            branches:
+              ignore: master
+          requires:
+            - hugo/build
       - deploy:
           filters:
             branches:
